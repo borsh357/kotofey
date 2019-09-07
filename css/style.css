@@ -1,0 +1,298 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*fonts*/
+ 
+
+/*styles for main divs*/
+ #main-container  {
+  padding: 20px;
+ }
+
+.header {
+	border: 1px solid;
+	border-radius: 10px;
+  font-size: 48px;
+  font-family: 'Amatic SC', bold;
+}
+
+.main {
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+/*styles for footer*/
+.footer {
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 10px;
+	background: url('/img/paws.png') 40%;
+}
+
+#copyright {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+  margin-bottom: 15px;
+	color: white;
+	display: block;
+	float: right;
+}
+
+#contacts {
+	background: rgb(183, 192, 206, 0.9);
+	padding: 15px;
+	border-radius: 30px;
+	color: black;
+	font-size: 18px;
+}
+
+#social-icons {
+  padding: 0 !important;
+  margin-top: 5px;
+}
+
+/*styles for slider img*/
+.slidimg {
+	overflow: hidden;
+	padding:5px;
+	width: 95%;
+	margin-top: 5px;
+    background-color:#FFF;
+    border-radius: 15px;
+
+}
+
+/*styles for ul and li*/
+#slides {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+ 
+.slide {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    box-sizing: border-box;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+
+#logo {
+	width: 100%;
+	border: none;
+	margin: 2px;
+}
+
+/* newsbox styles */
+
+#newsbox {
+	height: 100px;
+}
+
+#lastnews-card {
+  padding: 5px !important;
+}
+.example-1 {
+position: relative;
+overflow-y: scroll;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #F5F5F5;
+border-radius: 10px;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+width: 12px;
+background-color: #F5F5F5;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-image: -webkit-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
+background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.img-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 10px;
+}
+
+/*styles for responsive font-size*/
+
+@media (max-width: 320px) {
+  .header {
+  font-size: 28px;
+  }
+  .main {
+    padding: 3px;
+  }
+  #hd-contacts{
+    font-size: 20px !important;
+  }
+  #newsbox {
+    font-size: 14px !important;
+  }
+  #lastnews {
+  	font-size: 8px !important;
+  }
+  #main-container{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 70px !important;
+  }
+  #slider {
+    min-height: 50px;
+  }
+    .navbar {
+    max-width: 320px;
+  }
+  #contacts {
+    font-size: 14px;
+  }
+  #copyright {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  #newsbox {
+    font-size: 14px !important;
+  }
+  #lastnews {
+  	font-size: 14px !important;
+  }
+  #main-container{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 70px !important;
+  }
+  #contacts {
+    font-size: 16px;
+  }
+  #copyright {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 411px) {
+  #newsbox {
+    font-size: 11px;
+  }
+  #lastnews {
+    font-size: 11px;
+  }
+  #main-container{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 70px !important;
+  }
+  #slider {
+    min-height: 60px;
+  }
+}
+
+@media (min-width: 414px) {
+  #newsbox {
+    font-size: 12px;
+  }
+  #lastnews {
+  	font-size: 12px;
+  }
+}
+
+@media (min-width: 375px) {
+  .header {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 425px) {
+  .header {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hd-contacts {
+    font-size: 18px !important;
+}
+  .header {
+    font-size: 32px;
+  }
+  #hd-contacts {
+    font-size: 20px !important;
+}
+}
+
+@media (min-width: 1024px) {
+  #hd-contacts {
+    font-size: 20px !important;
+}
+  .header {
+    font-size: 48px !important;
+  }
+}
+
+#hd-contacts {
+  padding: 0;
+  padding-right: 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  color: #386085;
+}
+
+.cat-ct {
+  width: 100px;
+}
+
+#sec {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.pd10 {
+  padding: 10px 20px;
+}
+
+.nav-link {
+  letter-spacing: 2px;
+}
+.navbar-brand {
+  font-family: 'Amatic SC', bold;
+  font-size: 2rem;
+  padding: 0;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.navbar {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+}
+
+.card { height: auto; }
